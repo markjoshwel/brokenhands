@@ -1,0 +1,94 @@
+[brokenhands]
+# camera: id of the camera to use, defaults to 0 for the first camera
+camera = 0.0
+
+[brokenithm.keycodes]
+# define the virtual keycodes for each sensing range
+# if not defined, the default is 0x00 (no key)
+# if defined, the value must be a valid keycode
+#
+#   override: if true, the default keycodes are overridden
+#   sensor0:  keycode for the sensor0 range
+#     ...
+#   sensor5:  keycode for the sensor5 range
+#
+# the default keycodes are: 0xDB, 0xDD, 0xBA, 0xBE, 0xDE, 0xBF
+# for sensors 5 to 0 respectively
+
+override = false
+sensor5  = 0xDB
+sensor4  = 0xDD
+sensor3  = 0xBA
+sensor2  = 0xBE
+sensor1  = 0xDE
+sensor0  = 0xBF
+
+# sensor position values
+# 
+#      CAMERA             top
+#      ┌----------------------------------------------------------------------------┐
+#      │         ┌---------│---------┐                                              │
+#      │         │      sen│or5      │                                              │
+#      │         └---------↓---------┘                                              │
+#      │         ┌---------T---------┐                                              │
+# left │─────────→L      sensor4      R←──────────────────────────────────────────────────│ right
+#      │         └---------B---------┘                                              │
+#      │         ┌---------↑---------┐                                              │
+#      │         │      sen│or3      │                                              │
+#      │         └---------│---------┘                                              │
+#      │         ┌---------│---------┐                                              │
+#      │         │      sen│or2      │                                              │
+#      │         └---------│---------┘                                              │
+#      │         ┌---------│---------┐                                              │
+#      │         │      sen│or1      │                                              │
+#      │         └---------│---------┘                                              │
+#      │         ┌---------│---------┐                                              │
+#      │         │      sen│or1      │                                              │
+#      │         └---------│---------┘                                              │
+#      │                   │                                                        │
+#      └----------------------------------------------------------------------------┘
+#                        bottom
+#
+# each sensor is defined with the following values:
+#   top    = % of the camera height from camera top    to the sensor top
+#   bottom = % of the camera height from camera bottom to the sensor bottom
+#   left   = % of the camera width  from camera left   to the sensor left
+#   right  = % of the camera width  from camera right  to the sensor right
+#
+# values are float numbers between 0 and 1
+
+[brokenithm.sensor0]
+top    = 0.0
+bottom = 0.0
+left   = 0.0
+right  = 0.0
+
+[brokenithm.sensor1]
+top    = 0.0
+bottom = 0.0
+left   = 0.0
+right  = 0.0
+
+[brokenithm.sensor2]
+top    = 0.0
+bottom = 0.0
+left   = 0.0
+right  = 0.0
+
+[brokenithm.sensor3]
+top    = 0.0
+bottom = 0.0
+left   = 0.0
+right  = 0.0
+
+[brokenithm.sensor4]
+top    = 0.0
+bottom = 0.0
+left   = 0.0
+right  = 0.0
+
+[brokenithm.sensor5]
+top    = 0.0
+bottom = 0.0
+left   = 0.0
+right  = 0.0

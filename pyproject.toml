@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "brokenhands"
+version = "0.1.0"
+description = "a brokenithn-compatible six-region hand detector for use with a certain sliding and jumping hand rhythm game"
+authors = ["Mark Joshwel <mark@joshwel.co>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.8.0"
+black = "^24.2.0"
+isort = "^5.13.2"
+pyinstaller = "^6.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
