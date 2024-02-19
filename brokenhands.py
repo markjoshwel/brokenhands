@@ -1,5 +1,7 @@
 """
-brokenhands: a brokenithn-compatible six-region hand detector for use with a certain sliding and jumping hand rhythm game
+brokenhands: a brokenithn-compatible six-region hand detector for use with a certain
+             sliding and jumping hand rhythm game
+
 Copyright (C) 2024  Mark Joshwel <mark@joshwel.co>
 
 This program is free software: you can redistribute it and/or modify
