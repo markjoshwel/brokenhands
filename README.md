@@ -1,6 +1,7 @@
 # brokenhands
 
-a six-region hand detector for use with a certain sliding and jumping hand rhythm game.  
+a six-region hand detector for use with a certain sliding and jumping hand rhythm game.
+
 for use with [4yn's](https://github.com/4yn)
 [slidershim/brokenithm](https://github.com/4yn/slidershim).
 inspired by [logchan/chuni-hands](https://github.com/logchan/chuni-hands).
@@ -14,10 +15,10 @@ inspired by [logchan/chuni-hands](https://github.com/logchan/chuni-hands).
 
 > why not just use chuni-hands?
 
-1. chuni-hands uses opencv, which can be quite cpu-intensive. brokenhands captures
-   frames from the slider's camera, averages pixels user-defined regions and then
-   detects changes in the average pixel values to determine if a hand is present in
-   a region.
+1. chuni-hands uses opencv, which can be quite cpu-intensive. brokenhands captures frames
+   from the slider's camera, averages pixels in user-defined regions and then detects
+   changes in the average pixel values over time to determine if a hand is present in a
+   region.
 
 2. chuni-hands had zero documentation and i had no idea how to get it working with
    chun*thm. (i couldn't find/get the chuniio.dll to work which is a skill issue on my
@@ -34,7 +35,7 @@ inspired by [logchan/chuni-hands](https://github.com/logchan/chuni-hands).
 > really? python?
 
 i was going to write this in rust at first, but in any case you would be bottlenecked by
-the frame rate of the camera. python is good enough, for now.
+the frame rate of the camera. python is good enough, for now. (and possibly forever)
 
 ## installation
 
